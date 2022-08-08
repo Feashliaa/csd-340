@@ -1,7 +1,5 @@
-CSD 340 Web Development with HTML and CSS
-------
+# WEB 340 Web Development with HTML and CSS
 
-Contributors
-------
+## Contributors
 * Professor Sampson
 * Riley Dorrington

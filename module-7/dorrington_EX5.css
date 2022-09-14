@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #3c275a;
+    background-color: #272f5a;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -17,8 +17,8 @@ h1 {
 /* Navigation Bar */
 #navbar {
     overflow: hidden;
-    background-color: #4F3674;
-    border-bottom: 15px solid #D6A800;
+    background-color: #110e3f;
+    border-bottom: 15px solid #000000;
 }
 
 #navbar a {
@@ -31,8 +31,8 @@ h1 {
 }
 
 #navbar a:hover {
-    background-color: #D6A800;
-    color: #4F3674;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Main Content */
@@ -53,7 +53,7 @@ h1 {
 .card-title {
     text-align: center;
     font-size: 2em;
-    color: #4F3674;
+    color: #004279;
     font-weight: 400;
 }
 
@@ -63,13 +63,15 @@ h1 {
 
 /* Hyperlink CSS */
 a {
-    color: #4F3674;
+    color: #004279;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FFF;
-    background-color: #4F3674;
+    color: rgb(128, 2, 2);
+
+    /* have a border around the link */
+    border: 2px solid #000000;
 }
 
 .card:hover {
@@ -78,7 +80,7 @@ a:hover {
 
 /* Footer CSS */
 footer {
-    background-color: #4F3674;
+    background-color: #272f5a;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -99,5 +101,10 @@ footer a {
 }
 
 footer a:hover {
+
+    color:#804444;
+
+    border: 0px;
+
     text-decoration: underline;
 }

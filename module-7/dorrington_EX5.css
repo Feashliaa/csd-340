@@ -53,25 +53,12 @@ h1 {
 .card-title {
     text-align: center;
     font-size: 2em;
-    color: #004279;
+    color: #000000;
     font-weight: 400;
 }
 
 .card-content {
     padding: 2px 16px;
-}
-
-/* Hyperlink CSS */
-a {
-    color: #004279;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(128, 2, 2);
-
-    /* have a border around the link */
-    border: 2px solid #000000;
 }
 
 .card:hover {
@@ -102,9 +89,21 @@ footer a {
 
 footer a:hover {
 
-    color:#804444;
+    color: #804444;
 
     border: 0px;
 
     text-decoration: underline;
+}
+
+/* Hyperlink CSS */
+a {
+    color: #004279;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(128, 2, 2);
+
+    border: 2px solid #000000;
 }

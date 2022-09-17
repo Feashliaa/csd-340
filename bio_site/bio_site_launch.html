@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>BioSite</title>
 
 <body>
 
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
-    <script type="text/javascript">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <script>
         function myFunc(element) {
 
             var tooltip = document.getElementById('myTooltip');
@@ -32,19 +35,14 @@
         });
     </script>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>BioSite</title>
+    <link rel="stylesheet" type="text/css" href="bio_site.css">
 
-        <link rel="stylesheet" type="text/css" href="bio_site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-        <div id="navbar">
-            <a href="https://feashliaa.github.io/csd-340/"><button class="top_button">Return to Landing
-                    Page</button></a>
-        </div>
-    </head>
+    <div id="navbar">
+        <a class="button" href="https://feashliaa.github.io/csd-340/"><span>Return to Landing
+                Page </span></a>
+    </div>
 
     <div id="text_container">
         <div class="contents_block">
@@ -70,18 +68,20 @@
         </div>
 
         <div class="portrait"></div>
+
+        <div class="pencil"></div>
     </div>
 
     <div class="contents_block_mobile">
-            <h2>Contents</h2>
-            <ol type="1">
-                <li><a href="Early_Life.html">Early Life</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Career.html">Career</a></li>
-                <li><a href="Personal_Life.html">Personal Life</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-            </ol>
-            <div class="portrait"></div>
+        <h2>Contents</h2>
+        <ol type="1">
+            <li><a href="Early_Life.html">Early Life</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Personal_Life.html">Personal Life</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+        </ol>
+        <div class="portrait"></div>
     </div>
 
     <div id="bio_image_container">
@@ -93,23 +93,23 @@
         <img src="brain.png" alt="launch_point" usemap="#image-map" class="map" />
 
         <map name="image-map">
-            <area href="Early_Life.html" title="Early Life"
+            <area href="Early_Life.html" title="Early Life" alt="Early Life"
                 coords="515,358,509,378,531,406,496,434,423,456,378,488,357,540,321,581,306,616,305,642,222,651,166,649,133,638,112,619,72,578,52,507,40,466,42,381,55,339,77,309,81,286,93,267,115,257,130,225,182,181,251,144,293,120,342,109,395,93,446,72,508,67,557,56,595,58,658,65,650,104,617,107,576,131,574,158,585,191,565,222,542,285,535,317,533,343"
                 class="tooltip" onmouseover="myFunc(this)" onmouseout="myFuncHide(this)" shape="poly" />
 
-            <area href="Career.html" title="Career"
+            <area href="Career.html" title="Career" alt="Career"
                 coords="530,406,577,398,614,370,644,363,756,380,966,413,980,375,1015,342,1059,293,1048,269,1017,244,1012,218,997,197,953,177,923,142,886,118,853,102,833,92,803,91,780,71,739,65,706,69,675,62,657,101,613,111,582,124,578,150,592,177,596,191,572,213,555,260,541,297,535,323,516,357,509,375"
                 class="tooltip" onmouseover="myFunc(this)" onmouseout="myFuncHide(this)" shape="poly" />
 
-            <area href="Personal Life.html" title="Personal Life"
+            <area href="Personal_Life.html" title="Personal Life" alt="Personal Life"
                 coords="1063,297,1027,326,978,377,973,409,977,447,985,473,964,487,929,557,915,565,882,594,885,605,936,618,983,607,1053,606,1102,584,1130,546,1141,514,1149,492,1143,457,1146,433,1123,400,1112,366,1090,342,1085,316"
                 class="tooltip" onmouseover="myFunc(this)" onmouseout="myFuncHide(this)" shape="poly" />
 
-            <area href="Hobbies.html" title="Hobbies"
+            <area href="Hobbies.html" title="Hobbies" alt="Hobbies"
                 coords="312,642,335,666,359,702,394,727,430,747,469,747,491,738,522,737,542,732,556,723,571,715,582,692,609,681,630,675,653,665,677,650,708,653,747,649,784,645,805,641,829,630,851,624,876,611,884,606,880,592,899,578,926,558,946,520,955,495,976,479,973,450,967,415,910,403,818,389,746,378,672,365,639,365,607,380,576,403,542,407,520,414,503,433,450,447,414,462,386,484,361,542,325,578"
                 class="tooltip" onmouseover="myFunc(this)" onmouseout="myFuncHide(this)" shape="poly" />
 
-            <area href="Education.html" title="Education"
+            <area href="Education.html" title="Education" alt="Education"
                 coords="636,732,681,760,745,832,790,807,772,783,827,795,887,786,971,735,1031,687,1047,655,1040,608,983,607,940,619,890,605,799,643,699,654,681,649,654,666,610,685,622,714"
                 class="tooltip" onmouseover="myFunc(this)" onmouseout="myFuncHide(this)" shape="poly" />
         </map>

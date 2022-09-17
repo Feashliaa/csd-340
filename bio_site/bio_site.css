@@ -7,6 +7,54 @@ h1 {
     left: 5%;
 }
 
+/* style a link as a button */
+a.button {
+    display: block;
+
+    /* Dealing with Button Shape */
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    right: 0;
+    background: #291B54;
+
+    /* remove the underline */
+    text-decoration: none;
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* style a.button's text */
+a.button span {
+    /* Text */
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 24px;
+
+    /* move the text to the center of the button */
+    text-align: center;
+
+    /* move the text down a bit */
+    padding-top: 17.5px;
+
+    /* move the text to the middle of the button */
+    display: block;
+
+}
+
+a.button:hover {
+    background: #FFFFFF;
+}
+
+a.button:hover span {
+    color: black;
+}
+
 #navbar {
     overflow: hidden;
 }
@@ -40,7 +88,6 @@ div.contents_block {
     left: 0;
     transform: translate(5%, -50%);
 
-
     background-color: #7E7CDC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -52,9 +99,8 @@ div.contents_block h2 {
 
     /* position it in the top middle of the contents_block */
     position: absolute;
-    top: -5%;
-    left: 40%;
-
+    top: -7.5%;
+    left: 30%;
 
     font-size: .75vw;
     text-decoration: underline;
@@ -63,9 +109,8 @@ div.contents_block h2 {
 
 /* make the order list part of the contents_block */
 div.contents_block ol {
-
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 0;
 
     /* have it so that the font gets bigger as the screen gets smaller */
@@ -119,6 +164,24 @@ div.portrait {
     border-radius: 20px;
 }
 
+/* make a div that will hold an image of a pencil */
+div.pencil {
+    position: absolute;
+    width: 10%;
+    height: 50%;
+
+    top: 50%;
+    left: 0;
+
+    /* move it up a bit */
+    transform: translate(5%, -50%);
+
+    /* set the background to pencil.png, make it fit in the pencil div, and center it */
+    background: url("pencil.png") no-repeat center center;
+    background-size: cover;
+}
+
+
 
 #bio_image_container {
 
@@ -166,96 +229,6 @@ div.portrait {
     top: 30%;
 }
 
-
-.top_button {
-    display: block;
-
-    /* Text */
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 24px;
-
-    /* Dealing with Button Shape */
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    top: 0;
-    right: 0;
-    background: #291B54;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.top_button:hover {
-    background-color: white;
-    color: black;
-}
-
-.bottom_button {
-    display: block;
-
-    /* Text */
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 24px;
-
-    /* Dealing with Button Shape */
-    box-sizing: border-box;
-    position: absolute;
-    width: 50%;
-    height: 5%;
-    bottom: 0%;
-    background: #291B54;
-
-    /* make the button have a border using the background color */
-    border: 1px solid #291B54;
-
-    /* give the right portion of the button a shadow */
-    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-
-    /* give the top corner a radius */
-    border-top-right-radius: 20px;
-}
-
-.next_button {
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 10%;
-    height: 15%;
-
-
-
-    /* move to the bottom right corner */
-    bottom: 0;
-    right: 0;
-
-    transform: translate(-25%, -25%);
-
-
-    background: url(next.png)no-repeat center center;
-    background-size: cover;
-    border: 1px solid #000000;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.next_button:hover {
-    /* highlight the "next button" when the mouse hovers over it */
-    border-color: #ff1e00;
-}
-
-.bottom_button:hover {
-    background-color: white;
-    color: black;
-}
-
 .map {
     margin: 0 auto;
     display: block;
@@ -268,6 +241,13 @@ div.portrait {
 
 div.contents_block_mobile {
     display: none;
+}
+
+/* have it so the pencil is hidden above a height of 1050px */
+@media screen and (min-height: 1050px) {
+    div.pencil {
+        display: none;
+    }
 }
 
 /* have it so if the screen gets below a width of 1000px, the map will be hidden */
@@ -342,6 +322,85 @@ div.contents_block_mobile {
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
     }
+
+    /* have the list items be not as wide */
+    div.contents_block_mobile ol li {
+        width: 50%;
+    }
+}
+
+/* do the same thing as above, but if the screen height is below max-height: 775px */
+@media screen and (max-height: 775px) {
+    .map {
+        display: none;
+    }
+
+    .map img {
+        display: none;
+    }
+
+    .image_container {
+        display: none;
+    }
+
+    /* hide the text container */
+    #text_container {
+        display: none;
+    }
+
+    /* make a new contents block, use it as the main block in on screens 1000px or smaller */
+    div.contents_block_mobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+
+        top: 20%;
+        left: 0;
+
+        background: #D9D9D9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    /* make the list items in the contents block bigger */
+    div.contents_block_mobile ol li {
+        font-size: 5vw;
+
+        /* move the text to the right */
+        transform: translate(5%, 400%);
+    }
+
+    /* make h2 part of the contents_block */
+    div.contents_block_mobile h2 {
+
+        /* position it in the top middle of the contents_block */
+        position: absolute;
+        top: -5%;
+        left: 40%;
+
+
+        font-size: 5vw;
+        text-decoration: underline;
+    }
+
+    /* have the portrait show up in the contents block */
+    div.contents_block_mobile .portrait {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 75%;
+
+        top: 65%;
+        left: 50%;
+
+        /* set the background to nick.png, make it fit in the portrait div, and center it */
+        background: url("nick.png") no-repeat center center;
+        background-size: cover;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
 }
 
 /* at 1920x1080, the text in the contents block will be increased in size */
@@ -362,10 +421,7 @@ div.contents_block_mobile {
 /* have it so the text in the contents block with be increased in size if the screen is below 1700px */
 @media screen and (max-width: 1700px) {
     div.contents_block h2 {
-        font-size: 1.5vw;
-
-        /* move this up and to the left 50px */
-        transform: translate(-50px, -10px);
+        font-size: 1vw;
     }
 
     div.contents_block ol {
@@ -375,6 +431,7 @@ div.contents_block_mobile {
     div.text_box h3 {
         font-size: 1vw;
     }
+
 }
 
 /* at 1366x768, the biography image and text will be removed */
@@ -386,6 +443,7 @@ div.contents_block_mobile {
     #bio_image_container h2 {
         display: none;
     }
+
     /* make the portrait wider */
     div.portrait {
         width: 15%;
@@ -416,10 +474,106 @@ div.contents_block_mobile {
         display: none;
     }
 
-    /* move the brain image to the left */
     .image_container {
-        left: 0;
-        transform: translate(10%, -9%);
+        display: none;
+    }
+
+    /* increase the size of the text container */
+    #text_container {
+        height: 85%;
+    }
+
+    /* increase the size of the text in the contents block */
+    div.contents_block h2 {
+        font-size: 1.5vw;
+        /* move the text to the left */
+        transform: translate(-30%, -10%);
+    }
+
+    div.contents_block ol {
+        font-size: 1.5vw;
+    }
+
+    /* make the contents block smaller */
+    div.contents_block {
+        height: 35%;
+
+        /* move it up */
+        top: 25%;
+    }
+
+    /* make the text box smaller */
+    div.text_box {
+        height: 35%;
+
+        /* move it up */
+        top: 25%;
+    }
+
+    /* make the text box text bigger */
+    div.text_box h3 {
+        font-size: 1.25vw;
+
+        /* give the text a padding in the text box, left and right */
+        padding: 0 5%;
+
+        /* move it up a bit */
+        transform: translate(0, -5%);
+    }
+
+    /* make the portraite smaller */
+    div.portrait {
+        width: 25%;
+        height: 50%;
+
+        /* move it down */
+        top: 70%;
+    }
+
+    /* have the pencil picture smaller */
+    div.pencil {
+
+        /* have it so the entire pencil is visible */
+        width: 400px;
+        height: 400px;
+
+        /* move it down */
+        top: 75%;
+
+        /* move it to the right */
+        left: 5%;
+    }
+
+    a.button {
+        /* increase the height of the button */
+        height: 60px;
+
+    }
+}
+
+/* at a height of 925px, the div.pencil will be moved up */
+@media screen and (max-height: 925px) {
+    div.pencil {
+        top: 70%;
+    }
+
+    /* have the text in the text box be slightly smaller */
+    div.text_box h3 {
+        font-size: 1.10vw;
+    }
+}
+
+/* at 1250px height, the image container will be moved up */
+@media screen and (max-height: 1250px) {
+    .image_container {
+        top: 25%;
+    }
+}
+
+/* at 1100px height, the image container will be moved up */
+@media screen and (max-height: 1100px) {
+    .image_container {
+        top: 22.5%;
     }
 }
 

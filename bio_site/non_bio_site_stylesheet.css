@@ -144,7 +144,6 @@ a.next_button:hover {
 
 }
 
-/* draw a line under Early_Life, name it line-1, and it is a div class */
 .line-1 {
     /* make the div a block */
     display: block;
@@ -167,9 +166,13 @@ a.next_button:hover {
 #text_container {
     display: block;
     position: absolute;
-    width: 75%;
+    width: 65%;
     height: 250px;
-    top: 250px;
+
+    bottom: 0;
+    left: 0;
+
+    transform: translate(1.25%, -175%);
 
     background: #C5C6EA;
 
@@ -179,37 +182,9 @@ a.next_button:hover {
     border-radius: 20px;
 }
 
-/* media control, at a height of 555px, the text container will go away */
-@media screen and (max-height: 555px) {
-    #text_container {
-        display: none;
-    }
-}
-
 /* media control, at a height of 170px, the bottom button will go away */
 @media screen and (max-height: 170px) {
     a.bottom_button {
-        display: none;
-    }
-}
-
-/* media control, at a width of 1285px or height of 815px, the next button will go away */
-@media (max-width:1285px) and (max-height: 815px) {
-    a.next_button {
-        display: none;
-    }
-}
-
-/* at a height of 555px, and width of 1285px, the next button will stay  */
-@media (max-width:1285px) and (max-height: 555px) {
-    a.next_button {
-        display: block;
-    }
-}
-
-/* media control, at a height of 430px, the next button will go away */
-@media screen and (max-height: 430px) {
-    a.next_button {
         display: none;
     }
 }

@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    background-color: rgb(200, 200, 200);
+}
+
+header {
+    background-color: #272f5a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #110e3f;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.hobbies {
+    min-height: 250px;
+
+    /* give the bottom a border */
+    border-bottom: 1px solid #000000;
+}
+
+.experience {
+    min-height: 250px;
+
+    /* give the bottom a border */
+    border-bottom: 1px solid #000000;
+}
+
+.contact-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+
+    /* top border */
+    border-top: 1px solid #000000;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+
+    /* round the corners */
+    border-radius: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 4px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 16px 0 rgba(15, 140, 255, 0.2);
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-field {
+    padding: 15px;
+}
+
+.btn {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    color: #000;
+}
+
+.input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #110e3f;
+    color: #fff;
+    /* give the text some more thickness */
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #7873a5;
+    color: #fff;
+}
+
+.full-width {
+    width: 100%;
+}

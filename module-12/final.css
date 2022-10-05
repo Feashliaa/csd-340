@@ -156,3 +156,42 @@ h1 {
 .full-width {
     width: 100%;
 }
+
+.civ6 {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 35%;
+    border-radius: 20px;
+}
+
+.civ6:hover {
+    /* highlight the image */
+    border: 2px solid #574cec;
+    border-radius: 20px;
+}
+
+.para3 {
+    width: 100%;
+    height: 100%;
+}
+
+.para3:hover {
+    /* highlight the image */
+    border: 2px solid #574cec;
+    border-radius: 20px;
+}
+
+.steak {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 25%;
+    border-radius: 20px;
+}
+
+.steak:hover {
+    /* highlight the image */
+    border: 2px solid #574cec;
+    border-radius: 20px;
+}
